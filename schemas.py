@@ -1,4 +1,4 @@
-
+from typing import List
 from pydantic import BaseModel
 
 
@@ -21,3 +21,5 @@ class NoteUpdate(BaseModel):
 
 
 
+class NotesListResponse(BaseModel):
+    notes: List[NoteResponse]
